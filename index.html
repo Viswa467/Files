@@ -43,17 +43,6 @@ button:hover{
 background:#1a5fd0;
 }
 
-#drive{
-display:none;
-margin-top:40px;
-}
-
-iframe{
-border:none;
-width:90%;
-height:600px;
-}
-
 #error{
 color:red;
 }
@@ -78,16 +67,6 @@ color:red;
 
 </div>
 
-
-<div id="drive">
-
-<h2>Viswa Drive Folder</h2>
-
-<iframe src="https://drive.google.com/embeddedfolderview?id=1txjnkdLUQVUztmvPcQlcSRWzoxpBGVC3#list"></iframe>
-
-</div>
-
-
 <script>
 
 function login(){
@@ -97,9 +76,7 @@ var password=document.getElementById("pass").value;
 
 if(username=="viswa467" && password=="viswa1234"){
 
-document.querySelector(".login-box").style.display="none";
-
-document.getElementById("drive").style.display="block";
+window.location.href="https://drive.google.com/drive/folders/1txjnkdLUQVUztmvPcQlcSRWzoxpBGVC3";
 
 }else{
 
