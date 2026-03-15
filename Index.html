@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Viswa Drive Access</title>
+</head>
+
+<body style="text-align:center;font-family:Arial">
+
+<h2>Login to Access Files</h2>
+
+<input id="user" placeholder="Username"><br><br>
+<input id="pass" type="password" placeholder="Password"><br><br>
+
+<button onclick="check()">Login</button>
+
+<p id="msg"></p>
+
+<div id="link" style="display:none">
+
+<h3>Access Files</h3>
+
+<a href="https://drive.google.com/drive/folders/1txjnkdLUQVUztmvPcQlcSRWzoxpBGVC3" target="_blank">
+Open Google Drive Folder
+</a>
+
+</div>
+
+<script>
+
+function check(){
+
+let u=document.getElementById("user").value
+let p=document.getElementById("pass").value
+
+if(u=="viswa467" && p=="viswa1234"){
+
+document.getElementById("link").style.display="block"
+document.getElementById("msg").innerHTML="Login successful"
+
+}else{
+
+document.getElementById("msg").innerHTML="Wrong username or password"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
